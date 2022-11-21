@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"qudong1\startup_stm32f103xb.o"
+"qudong1\main.o"
+"qudong1\gpio.o"
+"qudong1\dma.o"
+"qudong1\tim.o"
+"qudong1\usart.o"
+"qudong1\stm32f1xx_it.o"
+"qudong1\stm32f1xx_hal_msp.o"
+"qudong1\stm32f1xx_hal_gpio_ex.o"
+"qudong1\stm32f1xx_hal_tim.o"
+"qudong1\stm32f1xx_hal_tim_ex.o"
+"qudong1\stm32f1xx_hal.o"
+"qudong1\stm32f1xx_hal_rcc.o"
+"qudong1\stm32f1xx_hal_rcc_ex.o"
+"qudong1\stm32f1xx_hal_gpio.o"
+"qudong1\stm32f1xx_hal_dma.o"
+"qudong1\stm32f1xx_hal_cortex.o"
+"qudong1\stm32f1xx_hal_pwr.o"
+"qudong1\stm32f1xx_hal_flash.o"
+"qudong1\stm32f1xx_hal_flash_ex.o"
+"qudong1\stm32f1xx_hal_exti.o"
+"qudong1\stm32f1xx_hal_uart.o"
+"qudong1\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "qudong1\qudong1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "qudong1.map" -o qudong1\qudong1.axf
